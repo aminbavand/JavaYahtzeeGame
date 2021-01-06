@@ -291,6 +291,7 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
 	    	  if (diffs>=3) {
 	    		  result = true;
 	    	  }else {
+			  diffs = 0;
 		    	  for (int j=2; j<N_DICE; j++) {
 		    		  if ((dice[j]-dice[1])==0) diffs+=1;
 		    	  }
